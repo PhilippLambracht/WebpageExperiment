@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Character Builder</title>
+</head>
+
+<body>
+
+  <h4>Welcome USERNAME</h4>
+
+    <p id="lookings">
+      <h2> Lookings </h2>
+      <input id="charname" value=" Name your Character" >  </input>
+      <input id="age" value="Age of your Character" >  </input>
+      <input id="height" value="height of your Character" >  </input>
+      <input id="weight" value="weight of your Character" >  </input>
+      <select id="gender"> select a gender
+        <option value="volvo">Volvo</option>
+        <option value="saab">Please Fix</option>
+      </select>
+      <button id="race" type="button">Choose a race </button>
+
+      <button id="lookingsApply" type="button"> apply </button>
+      <button id="lookingsReset" type="button"> reset </button>
+    </p>
+
+    <p id="classInfo">
+      <h2> Class Info </h2>
+      <input id="lvl" value=" lvl" >  </input>
+      <button id="lvlPlus" type="button"> + </button>
+      <button id="lvlMinus" type="button"> - </button>
+
+      <button id="class" type="button">Choose a Class </button>
+      <button id="deity" type="button">Choose a Deity </button>
+
+      <button id="paragon" type="button">Choose a Paragon Path </button>
+      <button id="epic" type="button">Choose a Epic Destiny </button>
+      Alignment:
+      <select id="alignment"> Select a Alignment
+        <option value="good">Good</option>
+        <option value="neutral">Neutral</option>
+        <option value="Chaotic">Christian</option>
+      </select>
+      <button id="classInfoApply" type="button"> apply </button>
+      <button id="classInfoReset" type="button"> reset </button>
+    </p>
+
+    <p id="abilityScores">
+      <h2> Ability Scores <button id="abilityApply" type="button"> apply </button>
+      <button id="abilityReset" type="button"> reset </button></h2>
+      <p id= "ablitiyScoreTable">
+        <table>
+  <tr>
+    <th>Score</th>
+    <th>Ability</th>
+    <th>ABIL MOd<br></th>
+    <th>INC/DEC</th>
+    <th>Levelbonus</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>STR</td>
+    <td></td>
+    <td><button id="strPlus" type="button"> + </button>
+    <button id="strMinus" type="button"> - </button></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CON</td>
+    <td></td>
+    <td><button id="conPlus" type="button"> + </button>
+    <button id="conMinus" type="button"> - </button></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DEX</td>
+    <td></td>
+    <td><button id="dexPlus" type="button"> + </button>
+    <button id="dexMinus" type="button"> - </button></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>INT</td>
+    <td></td>
+    <td><button id="intPlus" type="button"> + </button>
+    <button id="intMinus" type="button"> - </button></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>WIS</td>
+    <td></td>
+    <td><button id="WisPlus" type="button"> + </button>
+    <button id="WisMinus" type="button"> - </button></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CHA</td>
+    <td></td>
+    <td><button id="chaPlus" type="button"> + </button>
+    <button id="chaMinus" type="button"> - </button></td>
+    <td></td>
+  </tr>
+</table>
+      </p>
+      <p id="pleft"> Many points left</p>
+      <p id="legit"> Ablility Score not legit</p>
+    </p>
+
+    <p id="feats">
+      <h2> Feats </h2>
+      <p id="dmBonusFeats">
+        <button id="dmExpertise" type="button"> Choose a Expertise Feat </button>
+        <button id="dmDefense" type="button"> Choose the improved Defenses Feat </button>
+        <button id="dmBonusFeatsApply" type="button"> apply </button>
+        <button id="dmBonusFeatsReset" type="button"> reset </button>
+      </p>
+
+      <p id="humanBonusFeat">
+        <button id="humanFeat" type="button"> Choose the Human Bonus Feat </button>
+        <button id="humanBonusFeatApply" type="button"> apply </button>
+        <button id="humanBonusFeatReset" type="button"> reset </button>
+      </p>
+
+      <p id="lvlFeats">
+        <p id="lvl1Feat">
+          <button id="lvlFeat1" type="button"> Choose a Feat (for Level 1) </button>
+          <button id="lvl1Apply" type="button"> apply </button>
+          <button id="lvl1Reset" type="button"> reset </button>
+
+        </p>
+
+        <p id="lvl2Feat">
+          <button id="lvlFeat2" type="button"> Choose a Feat (for Level 2) </button>
+          <button id="lvl2Apply" type="button"> apply </button>
+          <button id="lvl2Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl4Feat">
+          <button id="lvlFeat4" type="button"> Choose a Feat (for Level 4) </button>
+          <button id="lvl4Apply" type="button"> apply </button>
+          <button id="lvl4Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl6Feat">
+          <button id="lvlFeat2" type="button"> Choose a Feat (for Level 6) </button>
+          <button id="lvl6Apply" type="button"> apply </button>
+          <button id="lvl6Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl8Feat">
+          <button id="lvlFeat8" type="button"> Choose a Feat (for Level 8) </button>
+          <button id="lvl8Apply" type="button"> apply </button>
+          <button id="lvl8Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl10Feat">
+          <button id="lvlFeat10" type="button"> Choose a Feat (for Level 10) </button>
+          <button id="lvl10Apply" type="button"> apply </button>
+          <button id="lvl10Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl11Feat">
+          <button id="lvlFeat11" type="button"> Choose a Feat (for Level 11) </button>
+          <button id="lvl11Apply" type="button"> apply </button>
+          <button id="lvl11Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl12Feat">
+          <button id="lvlFeat12" type="button"> Choose a Feat (for Level 12) </button>
+          <button id="lvl12Apply" type="button"> apply </button>
+          <button id="lvl12Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl14Feat">
+          <button id="lvlFeat14" type="button"> Choose a Feat (for Level 14) </button>
+          <button id="lvl14Apply" type="button"> apply </button>
+          <button id="lvl14Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl16Feat">
+          <button id="lvlFeat16" type="button"> Choose a Feat (for Level 16) </button>
+          <button id="lvl16Apply" type="button"> apply </button>
+          <button id="lvl16Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl18Feat">
+          <button id="lvlFeat8" type="button"> Choose a Feat (for Level 18) </button>
+          <button id="lvl18Apply" type="button"> apply </button>
+          <button id="lvl18Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl20Feat">
+          <button id="lvlFeat20" type="button"> Choose a Feat (for Level 20) </button>
+          <button id="lvl20Apply" type="button"> apply </button>
+          <button id="lvl20Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl21Feat">
+          <button id="lvlFeat21" type="button"> Choose a Feat (for Level 21) </button>
+          <button id="lvl21Apply" type="button"> apply </button>
+          <button id="lvl21Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl22Feat">
+          <button id="lvlFeat22" type="button"> Choose a Feat (for Level 22) </button>
+          <button id="lvl22Apply" type="button"> apply </button>
+          <button id="lvl22Reset" type="button"> reset </button>
+        </p>
+        <p id="lvl24Feat">
+          <button id="lvlFeat24" type="button"> Choose a Feat (for Level 24) </button>
+          <button id="lvl24Apply" type="button"> apply </button>
+          <button id="lvl24Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl26Feat">
+          <button id="lvlFeat26" type="button"> Choose a Feat (for Level 26) </button>
+          <button id="lvl26Apply" type="button"> apply </button>
+          <button id="lvl26Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl28Feat">
+          <button id="lvlFeat28" type="button"> Choose a Feat (for Level 28) </button>
+          <button id="lvl28Apply" type="button"> apply </button>
+          <button id="lvl28Reset" type="button"> reset </button>
+        </p>
+
+        <p id="lvl30Feat">
+          <button id="lvlFeat30" type="button"> Choose a Feat (for Level 30) </button>
+          <button id="lvl30Apply" type="button"> apply </button>
+          <button id="lvl30Reset" type="button"> reset </button>
+        </p>
+
+      </p>
+      <h3> Feat details </h3>
+    </p>
+    <p id="skills">
+      <h2> Skills </h2>
+      <p id="skillTable">
+        <table>
+  <tr>
+    <th>Bonus</th>
+    <th>Skill Name<br></th>
+    <th>Abil Mod +1/2 lvl<br></th>
+    <th>TRND</th>
+    <th>Amorpenalty</th>
+    <th>Misc</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Acrobatics (DEX)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Arcana (INT)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Athletics(STR)</td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Bluff (CHA)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Diplomacy (CHA)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dungeoneering (WIS)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Endurance (CON)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Heal (WIS)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>History (INT)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Insight (WIS)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Intimidate (CHA)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Nature (WIS)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Perception (WIS)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Religion (INT)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Stealth (DEX)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Streetwise (CHA)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Thievery (DEX)<br></td>
+    <td></td>
+    <td><input type="checkbox" name="trained" value=""> </input></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+      </p>
+    </p>
+
+    <script src=""></script>
+</body>
+</html>
