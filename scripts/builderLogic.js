@@ -5,7 +5,7 @@ document.getElementById("classInfoApply").addEventListener("click", lvlVisibilti
 
 
 function lvlVisibilties(){
-  alert('visibleElements')
+
   var visibleElements = document.querySelectorAll('[data-lvl]');
   var lvl = parseFloat(document.getElementById('lvl').value);
 
