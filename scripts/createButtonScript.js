@@ -2,6 +2,7 @@
 document.getElementById("createButton").addEventListener("click", createFeatButtons);
 document.getElementById("unaliveIt").addEventListener("click", unaliveIt);
 document.getElementById("aliveIt").addEventListener("click", aliveIt);
+
 function AddBewButton (){
 alert('funtion triggert')
   var newButton = document.createElement("BUTTON");
