@@ -51,133 +51,176 @@
   <tr>
     <th>Score</th>
     <th>Ability</th>
-    <th>ABIL MOD<br></th>
-    <th>INC/DEC</th>
+    <th>MOD<br></th>
+    <th>Choose</th>
     <th>Levelbonus</th>
+    <th data-lvl = "4"> Level 4 </th>
+    <th data-lvl = "8"> Level 8 </th>
+    <th data-lvl = "14"> Level 14 </th>
+    <th data-lvl = "18"> Level 18 </th>
+    <th data-lvl = "24"> Level 24 </th>
+    <th data-lvl = "28"> Level 28 </th>
   </tr>
   <tr>
-    <td></td>
+    <td id="strScoreField">0</td>
     <td>STR</td>
-    <td></td>
-    <td><button id="strPlus" type="button"> + </button>
-    <button id="strMinus" type="button"> - </button></td>
-    <td></td>
+    <td id="strMod"></td>
+    <td><select id="strSelect" data-abilScoreChoose="">
+          <option value="8" selected>8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select>
+    </td>
+    <td> + <span id= "strLvlBonus">0</span> </td>
+    <td data-lvl = "4"> <input type = "checkbox" data-strChecked ="" data-lvl4Check=""> </input> </td>
+    <td data-lvl = "8"> <input type = "checkbox" data-strChecked ="" data-lvl8Check=""> </input> </td>
+    <td data-lvl = "14"> <input type = "checkbox" data-strChecked ="" data-lvl14Check=""> </input> </td>
+    <td data-lvl = "18"> <input type = "checkbox" data-strChecked ="" data-lvl18Check=""> </input> </td>
+    <td data-lvl = "24"> <input type = "checkbox" data-strChecked ="" data-lvl24Check=""> </input> </td>
+    <td data-lvl = "28"> <input type = "checkbox" data-strChecked ="" data-lvl28Check=""> </input> </td>
   </tr>
   <tr>
-    <td></td>
+    <td id="conScoreField">0</td>
     <td>CON</td>
-    <td></td>
-    <td><button id="conPlus" type="button"> + </button>
-    <button id="conMinus" type="button"> - </button></td>
-    <td></td>
+    <td id="conMod"></td>
+    <td><select id="conSelect" data-abilScoreChoose="">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select></td>
+    <td> + <span id= "conLvlBonus">0</span> </td>
+    <td data-lvl = "4"> <input type = "checkbox" data-conChecked ="" data-lvl4Check=""> </input> </td>
+    <td data-lvl = "8"> <input type = "checkbox" data-conChecked ="" data-lvl8Check=""> </input> </td>
+    <td data-lvl = "14"> <input type = "checkbox" data-conChecked ="" data-lvl14Check=""> </input> </td>
+    <td data-lvl = "18"> <input type = "checkbox" data-conChecked ="" data-lvl18Check=""> </input> </td>
+    <td data-lvl = "24"> <input type = "checkbox" data-conChecked ="" data-lvl24Check=""> </input> </td>
+    <td data-lvl = "28"> <input type = "checkbox" data-conChecked ="" data-lvl28Check=""> </input> </td>
   </tr>
   <tr>
-    <td></td>
+    <td id="dexScoreField">0</td>
     <td>DEX</td>
-    <td></td>
-    <td><button id="dexPlus" type="button"> + </button>
-    <button id="dexMinus" type="button"> - </button></td>
-    <td></td>
+    <td id ="dexMod"></td>
+    <td><select id="dexSelect" data-abilScoreChoose="">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select></td>
+    <td>  + <span id= "dexLvlBonus">0</span> </td>
+    <td data-lvl = "4"> <input type = "checkbox" data-dexChecked ="" data-lvl4Check=""> </input> </td>
+    <td data-lvl = "8"> <input type = "checkbox" data-dexChecked ="" data-lvl8Check=""> </input> </td>
+    <td data-lvl = "14"> <input type = "checkbox" data-dexChecked ="" data-lvl14Check=""> </input> </td>
+    <td data-lvl = "18"> <input type = "checkbox" data-dexChecked ="" data-lvl18Check=""> </input> </td>
+    <td data-lvl = "24"> <input type = "checkbox" data-dexChecked ="" data-lvl24Check=""> </input> </td>
+    <td data-lvl = "28"> <input type = "checkbox" data-dexChecked ="" data-lvl28Check=""> </input> </td>
   </tr>
   <tr>
-    <td></td>
+    <td id="intScoreField">0</td>
     <td>INT</td>
-    <td></td>
-    <td><button id="intPlus" type="button"> + </button>
-    <button id="intMinus" type="button"> - </button></td>
-    <td></td>
+    <td id = "intMod"></td>
+    <td><select id="intSelect" data-abilScoreChoose="">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select></td>
+    <td> + <span id= "intLvlBonus">0</span> </td>
+    <td data-lvl = "4"> <input type = "checkbox" data-intChecked = "" data-lvl4Check=""> </input> </td>
+    <td data-lvl = "8"> <input type = "checkbox" data-intChecked = "" data-lvl8Check=""> </input> </td>
+    <td data-lvl = "14"> <input type = "checkbox" data-intChecked = "" data-lvl14Check=""> </input> </td>
+    <td data-lvl = "18"> <input type = "checkbox" data-intChecked = "" data-lvl18Check=""> </input> </td>
+    <td data-lvl = "24"> <input type = "checkbox" data-intChecked = "" data-lvl24Check=""> </input> </td>
+    <td data-lvl = "28"> <input type = "checkbox" data-intChecked = "" data-lvl28Check=""> </input> </td>
   </tr>
   <tr>
-    <td></td>
+    <td id="wisScoreField">0</td>
     <td>WIS</td>
-    <td></td>
-    <td><button id="WisPlus" type="button"> + </button>
-    <button id="WisMinus" type="button"> - </button></td>
-    <td></td>
+    <td id="wisMod"></td>
+    <td><select id="wisSelect" data-abilScoreChoose="">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select></td>
+    <td> + <span id= "wisLvlBonus">0</span> </td>
+    <td data-lvl = "4"> <input type = "checkbox" data-wisChecked ="" data-lvl4Check=""> </input> </td>
+    <td data-lvl = "8"> <input type = "checkbox" data-wisChecked ="" data-lvl8Check=""> </input> </td>
+    <td data-lvl = "14"> <input type = "checkbox" data-wisChecked ="" data-lvl14Check=""> </input> </td>
+    <td data-lvl = "18"> <input type = "checkbox" data-wisChecked ="" data-lvl18Check=""> </input> </td>
+    <td data-lvl = "24"> <input type = "checkbox" data-wisChecked ="" data-lvl24Check=""> </input> </td>
+    <td data-lvl = "28"> <input type = "checkbox" data-wisChecked ="" data-lvl28Check=""> </input> </td>
   </tr>
   <tr>
-    <td></td>
+    <td id="chaScoreField">0</td>
     <td>CHA</td>
-    <td></td>
-    <td><button id="chaPlus" type="button"> + </button>
-    <button id="chaMinus" type="button"> - </button></td>
-    <td></td>
+    <td id = "chaMod"></td>
+    <td><select id="chaSelect" data-abilScoreChoose="">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select></td>
+    <td> + <span id= "chaLvlBonus">0</span> </td>
+    <td data-lvl = "4"> <input type = "checkbox" data-chaChecked="" data-lvl4Check=""> </input> </td>
+    <td data-lvl = "8"> <input type = "checkbox" data-chaChecked="" data-lvl8Check=""> </input> </td>
+    <td data-lvl = "14"> <input type = "checkbox" data-chaChecked="" data-lvl14Check=""> </input> </td>
+    <td data-lvl = "18"> <input type = "checkbox" data-chaChecked="" data-lvl18Check=""> </input> </td>
+    <td data-lvl = "24"> <input type = "checkbox" data-chaChecked="" data-lvl24Check=""> </input> </td>
+    <td data-lvl = "28"> <input type = "checkbox" data-chaChecked="" data-lvl28Check=""> </input> </td>
   </tr>
 </table>
       </p>
-      <p id= "lvl4Abil" data-lvl="4">
-        Choose an Apility Score (Level 4):
-        <select id="aScore4">
-          <option value="STR">STR</option>
-          <option value="CON">CON</option>
-          <option value="DEX">DEX</option>
-          <option value="INT">INT</option>
-          <option value="WIS">WIS</option>
-          <option value="CHA">CHA</option>
-        </select>
-      </p>
-      <p id= "lvl8Abil" data-lvl="8">
-        Choose an Apility Score (Level 8):
-        <select id="aScore8">
-          <option value="STR">STR</option>
-          <option value="CON">CON</option>
-          <option value="DEX">DEX</option>
-          <option value="INT">INT</option>
-          <option value="WIS">WIS</option>
-          <option value="CHA">CHA</option>
-        </select>
-      </p>
+
       <p id= "lvl11Abil" data-lvl="11"> +1 to all Ability Scores</p>
 
-      <p id= "lvl14Abil" data-lvl="14">
-        Choose an Apility Score (Level 14):
-        <select id="aScore14">
-          <option value="STR">STR</option>
-          <option value="CON">CON</option>
-          <option value="DEX">DEX</option>
-          <option value="INT">INT</option>
-          <option value="WIS">WIS</option>
-          <option value="CHA">CHA</option>
-        </select>
-      </p>
-
-      <p id= "lvl18Abil" data-lvl="18">
-        Choose an Apility Score (Level 18):
-        <select id="aScore18">
-          <option value="STR">STR</option>
-          <option value="CON">CON</option>
-          <option value="DEX">DEX</option>
-          <option value="INT">INT</option>
-          <option value="WIS">WIS</option>
-          <option value="CHA">CHA</option>
-        </select>
-      </p>
       <p id= "lvl21Abil" data-lvl="21"> +1 to all Ability Scores</p>
 
-      <p id= "lvl24Abil" data-lvl="24">
-        Choose an Apility Score (Level 24):
-        <select id="aScore24">
-          <option value="STR">STR</option>
-          <option value="CON">CON</option>
-          <option value="DEX">DEX</option>
-          <option value="INT">INT</option>
-          <option value="WIS">WIS</option>
-          <option value="CHA">CHA</option>
-        </select>
-      </p>
-      <p id= "lvl28Abil" data-lvl="28">
-        Choose an Apility Score (Level 28):
-        <select id="aScore28">
-          <option value="STR">STR</option>
-          <option value="CON">CON</option>
-          <option value="DEX">DEX</option>
-          <option value="INT">INT</option>
-          <option value="WIS">WIS</option>
-          <option value="CHA">CHA</option>
-        </select>
-      </p>
-      <p id="pleft"> Many points left</p>
-      <p id="legit"> Ablility Score not legit</p>
+      <p id="pleft"> <span id="pointsSpend"> 0 </span> of 22 points used</p>
+      <p id="legit" style="color:red"></p>
     </p>
 
     <p id="feats">
