@@ -121,6 +121,13 @@ function lvlVisibilties(){
 
   var visibleElements = document.querySelectorAll('[data-lvl]');
   var lvl = parseFloat(document.getElementById('lvl').value);
+  if (lvl <1 ) {
+    lvl =1;
+  } else if (lvl > 30) {
+    lvl=30;
+  }
+  document.getElementById('lvl').value = lvl;
+  document.getElementById('lvl').innerHTML = lvl;
   calcLvlBonus();
   abilPlusToAll();
   for(var i = 0 ; i < visibleElements.length; i++){
@@ -360,17 +367,22 @@ function calcAbilMod() {
 function isAbilScoreLegit(){
   var pointsSpend  = parseFloat(document.getElementById('pointsSpend').innerHTML);
   var abilSelects = document.querySelectorAll('[data-abilScoreChoose]');
-  var eightCount = 0;
+  var lessThanTen = 0;
   if (pointsSpend>22) {
-    document.getElementById('legit').innerHTML = "Too many Points, cheater";
+    document.getElementById('tooManyPoints').innerHTML = "Too many Points, cheater";
+  }else{
+    document.getElementById('tooManyPoints').innerHTML = "";
   }
+
   for (var i = 0; i < abilSelects.length; i++) {
-    if(parseFloat(abilSelects[i].value)===8){
-      eightCount++;
+    if(parseFloat(abilSelects[i].value) < 10){
+      lessThanTen++;
     }
   }
-  if (eightCount ===2) {
-    document.getElementById('legit').innerHTML = "Only one Score can be set to 8, learn the rules";
+  if (lessThanTen >= 2) {
+    document.getElementById('tooLowScores').innerHTML = "Only one Score can be set to less than 10, learn the rules";
+  }else{
+    document.getElementById('tooLowScores').innerHTML = "";
   }
 
 }
